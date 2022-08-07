@@ -21,11 +21,16 @@ h1 {
 .things {
     color: white;
     text-align: center;
-    margin: 0% 20% 0% 20%;
+    margin: 0% 20% 10% 20%;
 }
 
 .links{
     display:inline-block;
+}
+
+.aboutme {
+   padding-top: 40vh;
+   padding-bottom: 10vh;
 }
 
 
