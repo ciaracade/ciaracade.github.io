@@ -29,6 +29,11 @@ h1 {
    padding-bottom: 10vh;
 }
 
+.howsitgoing {
+    padding-top: 40vh;
+    padding-bottom: 10vh;
+}
+
 .links{
     display:inline-block;
 }
