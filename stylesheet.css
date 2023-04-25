@@ -15,7 +15,10 @@
 
 h1 {
     font-size: 100px !important;
+}
 
+.links{
+    display:inline-block;
 }
 
 .things {
@@ -25,17 +28,13 @@ h1 {
 }
 
 .recentprojects {
-    padding-top: 40vh;
+   padding-top: 40vh;
    padding-bottom: 10vh;
 }
 
 .howsitgoing {
     padding-top: 40vh;
     padding-bottom: 10vh;
-}
-
-.links{
-    display:inline-block;
 }
 
 .aboutme {
