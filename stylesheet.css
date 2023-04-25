@@ -21,6 +21,17 @@ h1 {
     display:inline-block;
 }
 
+.technologieslogo {
+   
+    display: inline-block;
+}
+
+img {
+    max-width:20%;
+    max-height: 100%;
+}
+
+
 .things {
     color: white;
     text-align: center;
@@ -29,7 +40,7 @@ h1 {
 
 .recentprojects {
    padding-top: 40vh;
-   padding-bottom: 10vh;
+   padding-bottom: 40vh;
 }
 
 .howsitgoing {
@@ -38,7 +49,7 @@ h1 {
 }
 
 .aboutme {
-   padding-top: 40vh;
+   padding-top: 30vh;
    padding-bottom: 10vh;
 }
 
