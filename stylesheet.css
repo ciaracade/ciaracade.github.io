@@ -24,6 +24,11 @@ h1 {
     margin: 0% 20% 10% 20%;
 }
 
+.recentprojects {
+    padding-top: 40vh;
+   padding-bottom: 10vh;
+}
+
 .links{
     display:inline-block;
 }
