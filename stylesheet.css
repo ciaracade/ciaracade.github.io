@@ -21,6 +21,10 @@ h1 {
     display:inline-block;
 }
 
+.announcement {
+    font-weight: bold;
+}
+
 .technologieslogo {
     margin: 0% 20% 10% 20%;
     display: inline-block;
@@ -52,5 +56,3 @@ img {
    padding-top: 30vh;
    padding-bottom: 10vh;
 }
-
-
