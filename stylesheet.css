@@ -1,3 +1,4 @@
+
 #particles-js{ 
     position:fixed; 
     width: 100%; 
@@ -23,6 +24,9 @@ h1 {
 
 .announcement {
     font-weight: bold;
+}
+.update {
+    padding: 40vh 20vh 100vh 20vh;
 }
 
 .technologieslogo {
