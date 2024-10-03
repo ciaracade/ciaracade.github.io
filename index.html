@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -8,61 +8,30 @@
   <link href="stylesheet.css" rel="stylesheet" />
   <link rel="shortcut icon" href="ICO.png" />
   <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <script src="js/bootstrap.bundle.js"></script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    spline-viewer {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="particles-js"></div>
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
-
-  <div class="website">
-    <div class="header">
-      <h1>CIARA CADE</h1>
-      <div>
-
-        <p class="links">
-          <a class="btn btn-light" role="button" href="https://www.linkedin.com/in/ciaracade/"
-            target="https://www.linkedin.com/in/ciaracade/">LinkedIn</a>
-        </p>
-        <p class="links">
-          <a class="btn btn-light" role="button" href="https://github.com/ciaracade"
-            target="https://github.com/ciaracade">GitHub</a>
-        </p>
-        <p class="links">
-          <a class="btn btn-light" href="mailto:contact@ciaracade.com" role="button">Email</a>
-        </p>
-        <p class="announcement"> Check out my #100DaysofCode Challenge on my LinkedIn!</p>
-        <p class="annoucementx"> New website coming soon!</p>
-      </div>
-    </div>
-
-    <div class="things">
-
-
-      <div class="howsitoging">
-        <h2>Hello</h2>
-        <p>
-          Hello, I'm Ciara Cade, a rising junior at the University of Michigan, majoring in Computer Science and
-          minoring in Asian Languages and Culture with a focus on Japanese. My passion lies in pursuing a career as a
-          software engineer, particularly within the tech and fintech industries.
-          Currently, I'm thrilled to be working as a Software Engineer Intern at Capital One, contributing to the Cloud
-          and Productivity Engineering team. In this role, I utilize GoLang and frameworks like Echo to create efficient
-          cloud APIs. Throughout this internship, I've gained valuable experience working with a range of technologies,
-          including SQL, PostgreSQL, React, JavaScript, Node.js, Swift UI, GoLang, and Chi.
-          Moreover, I actively take part in the #100DaysofCodeChallenge, where I'm engaging in various projects
-          involving HTML/CSS, Java, JavaScript, Ruby, Ruby on Rails, MongoDB, React, SQL, and Express, further honing my
-          skills and knowledge.
-          I'm enthusiastic about leveraging my technical expertise and language proficiency to drive innovative
-          solutions and contribute to the growth of cutting-edge companies in the industry. Let's connect and explore
-          exciting opportunities together!
-          Contact me best my messaging or emailing cadeci@umich.edu.
-        </p>
-      </div>
-
-
-    </div>
-  </div>
+  <spline-viewer url="https://prod.spline.design/4QhiNnG0ucBQjvRG/scene.splinecode"></spline-viewer>
 </body>
 
 </html>
