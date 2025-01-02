@@ -22,13 +22,7 @@ export function TitleButtons() {
         containerClassName="rounded-full"
         as="button"
         className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2">
-        <span>Mail</span>
-      </HoverBorderGradient>
-      <HoverBorderGradient
-        containerClassName="rounded-full"
-        as="button"
-        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2">
-        <span>Aceternity UI</span>
+        <span>💌</span>
       </HoverBorderGradient>
     </div>)
   );
