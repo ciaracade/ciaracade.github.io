@@ -60,8 +60,47 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
-  		}
+  			},
+  			navy: {
+  				800: '#1a1f35',
+  				900: '#0f1729',
+  			},
+  		},
+  		animation: {
+  			'gradient-xy': 'gradient-xy 15s ease infinite',
+  			'beam': 'beam 3s ease-in-out infinite',
+  			'gradient': 'gradient 8s linear infinite',
+  		},
+  		keyframes: {
+  			'gradient-xy': {
+  				'0%, 100%': {
+  					'background-position': '0% 50%'
+  				},
+  				'50%': {
+  					'background-position': '100% 50%'
+  				},
+  			},
+  			'beam': {
+  				'0%': {
+  					opacity: '0',
+  					transform: 'translateX(-100%) translateY(-100%)'
+  				},
+  				'50%': {
+  					opacity: '0.7'
+  				},
+  				'100%': {
+  					opacity: '0',
+  					transform: 'translateX(100%) translateY(100%)'
+  				},
+  			},
+  			'gradient': {
+  				'0%, 100%': { 'background-position': '0% 50%' },
+  				'50%': { 'background-position': '100% 50%' },
+  			},
+  		},
+  		backgroundSize: {
+  			'300%': '300%',
+  		},
   	}
   },
   plugins: [addVariablesForColors, require("tailwindcss-animate")],
