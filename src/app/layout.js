@@ -1,16 +1,17 @@
 import "./globals.css";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
-  title: "Hi, I'm Ciara Cade.",
+  title: "Ciara Cade",
   description: "Ciara Cade's Portfolio",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark">
-      <body>
-        {children}
-      </body>
+    <html lang="en" className={inter.variable}>
+      <body className="font-sans bg-black min-h-screen">{children}</body>
     </html>
   );
 }
