@@ -69,6 +69,10 @@ export default function Home() {
             inspired by my prev project building community of{" "}
             <span className="font-bold">3,100+</span> users.
           </p>
+          <p className="text-sm mb-4">
+            <span className="font-bold">Interests:</span> AI infrastructure, LLM
+            toolchains, Model Context Protocol, backend systems, etc.
+          </p>
 
           <section className="mb-8">
             <h2 className="text-lg font-bold mb-4">Experience</h2>
@@ -88,7 +92,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              */}
               <div>
                 <div className="flex justify-between items-baseline">
                   <div>
@@ -101,6 +104,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              */}
               <div>
                 <div className="flex justify-between items-baseline">
                   <div>
@@ -108,7 +112,7 @@ export default function Home() {
                       Computer Information Technology Consultant
                     </h3>
                     <p className="text-sm italic">
-                      UMich Biomedical Engineering
+                      University of Michigan Biomedical Engineering Dept
                     </p>
                   </div>
                   <div className="text-right">
@@ -167,8 +171,8 @@ export default function Home() {
               <div className="flex">
                 <span className="font-bold">
                   1<sup>st</sup>
+                  <span className="ml-1">Place Team</span>
                 </span>
-                <span className="ml-1">Place Team</span>
                 <span className="ml-1 text-black-300">
                   - JP Morgan Chase Code for Good Hackathon
                 </span>
@@ -176,14 +180,16 @@ export default function Home() {
               <div className="flex">
                 <span className="font-bold">
                   1<sup>st</sup>
+                  <span className="ml-1">Place Team</span>
                 </span>
-                <span className="ml-1">Place Team</span>
                 <span className="ml-1 text-black-300">
                   - Capital One Banking for Good Hackathon
                 </span>
               </div>
               <div className="flex">
-                <span>Contributions to Tech Community</span>
+                <span className="font-bold">
+                  Contributions to Tech Community
+                </span>
                 <span className="ml-1 text-black-300">
                   - OpenAI Scholarship Recipient
                 </span>
