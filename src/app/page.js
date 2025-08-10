@@ -196,6 +196,11 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <section className="mb-8">
+            <h2 className="text-lg font-bold mb-4">Projects</h2>
+            <p className="text-sm text-gray-500 italic">Coming soon...</p>
+          </section>
         </div>
       </div>
     </div>
