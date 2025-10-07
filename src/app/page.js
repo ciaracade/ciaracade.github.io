@@ -1,10 +1,12 @@
 import { LinkPreview } from "@/components/ui/link-preview";
+import { getRecentPRs } from "@/lib/github";
 
-export default function Home() {
+export default async function Home() {
+  const recentPRs = await getRecentPRs();
   return (
     <div className="relative min-h-screen w-full">
       <div className="absolute inset-0 z-10 flex justify-center font-sans overflow-y-auto">
-        <div className="text-grey text-left max-w-2xl p-8 my-12">
+        <div className="text-grey text-left max-w-2xl p-8 mb-12">
           <h1 className="text-2xl font-bold text-black">
             {" "}
             <LinkPreview
@@ -49,13 +51,22 @@ export default function Home() {
             >
               github
             </a>
+            <span className="text-gray-500">x</span>
+            <a
+              href="https://drive.google.com/drive/folders/1_uZ5HmZ6rVMpGX6fvH-nYQjnMBCxTbHi?usp=sharing"
+              className="text-black hover:text-gray-300 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              resume
+            </a>
           </div>
 
           <p className="text-sm mb-4">
-            Computer Science student at @ University of Michigan.
+            Computer Science Senior at @ University of Michigan.
           </p>
           <p className="text-sm mb-4">
-            Content Creator with 25k+ total following.
+            Content Creator with 31k+ total following.
           </p>
           <p className="text-sm mb-4">
             Currently building{" "}
@@ -70,14 +81,27 @@ export default function Home() {
             <span className="font-bold">3,100+</span> users.
           </p>
           <p className="text-sm mb-4">
-            <span className="font-bold">Interests:</span> AI infrastructure, LLM
-            toolchains, Model Context Protocol, backend systems, etc.
+            <span className="font-bold">Interests:</span> open source
+            contributing, backend systems, databases, AI infra/tools, context
+            engineering, MCPs etc.
           </p>
 
           <section className="mb-8">
             <h2 className="text-lg font-bold mb-4">Experience</h2>
             <div className="space-y-4">
-              {/*
+              <div>
+                <div className="flex justify-between items-baseline">
+                  <div>
+                    <h3 className="text-base font-bold">Founder</h3>
+                    <p className="text-sm italic">SourceShip.dev</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm">August 2025 – Present</p>
+                    <p className="text-sm italic">Remote</p>
+                  </div>
+                </div>
+              </div>
+              {/* -- Shhhhhh I'm manifesting....
               <div>
                 <div className="flex justify-between items-baseline">
                   <div>
@@ -92,35 +116,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div>
-                <div className="flex justify-between items-baseline">
-                  <div>
-                    <h3 className="text-base font-bold">Founder</h3>
-                    <p className="text-sm italic">SourceShip.dev</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-sm">April 2025 – Present</p>
-                    <p className="text-sm italic">Remote</p>
-                  </div>
-                </div>
-              </div>
               */}
-              <div>
-                <div className="flex justify-between items-baseline">
-                  <div>
-                    <h3 className="text-base font-bold">
-                      Computer Information Technology Consultant
-                    </h3>
-                    <p className="text-sm italic">
-                      University of Michigan Biomedical Engineering Dept
-                    </p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-sm">Nov 2023 – Present</p>
-                    <p className="text-sm italic">Ann Arbor, MI</p>
-                  </div>
-                </div>
-              </div>
               <div className="flex justify-between items-baseline">
                 <div>
                   <h3 className="text-base font-bold">
@@ -131,6 +127,22 @@ export default function Home() {
                 <div className="text-right">
                   <p className="text-sm">May 2025 - August 2025</p>
                   <p className="text-sm italic">Seattle, WA</p>
+                </div>
+              </div>
+              <div>
+                <div className="flex justify-between items-baseline">
+                  <div>
+                    <h3 className="text-base font-bold">
+                      Computer Information Technology Consultant
+                    </h3>
+                    <p className="text-sm italic">
+                      University of Michigan Biomedical Engineering Department
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm">Nov 2023 – May 2025</p>
+                    <p className="text-sm italic">Ann Arbor, MI</p>
+                  </div>
                 </div>
               </div>
               <div>
@@ -199,6 +211,138 @@ export default function Home() {
 
           <section className="mb-8">
             <h2 className="text-lg font-bold mb-4">Projects</h2>
+            <div className="space-y-4">
+              <div>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-base font-bold">
+                    <a
+                      href="https://sourceship.dev"
+                      className="text-black hover:text-gray-500 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      SourceShip.dev
+                    </a>
+                  </h3>
+                  <span className="px-2 py-0.5 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded">
+                    Building
+                  </span>
+                </div>
+                <p className="text-sm text-gray-700">
+                  Open-source internship alternative connecting developers with real-world projects
+                </p>
+                <p className="text-sm text-gray-500 mt-1">
+                  <span className="font-semibold">Built with:</span> Next.js, React, TypeScript, Supabase, Tailwind CSS
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-base font-bold">
+                    <a
+                      href="https://github.com/ciaracade/MorphosisAI"
+                      className="text-black hover:text-gray-500 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      MorphosisAI
+                    </a>
+                  </h3>
+                  <span className="px-2 py-0.5 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded">
+                    Building
+                  </span>
+                </div>
+                <p className="text-sm text-gray-700">
+                  AI-powered stream aggregation UI for Apache Kafka pipelines
+                </p>
+                <p className="text-sm text-gray-500 mt-1">
+                  <span className="font-semibold">Built with:</span> TypeScript, React
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-base font-bold">
+                    <a
+                      href="https://github.com/ciaracade/umich-mcp"
+                      className="text-black hover:text-gray-500 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      UMich MCP Server
+                    </a>
+                  </h3>
+                  <span className="px-2 py-0.5 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded">
+                    Building
+                  </span>
+                </div>
+                <p className="text-sm text-gray-700">
+                  Model Context Protocol server using University of Michigan public APIs
+                </p>
+                <p className="text-sm text-gray-500 mt-1">
+                  <span className="font-semibold">Built with:</span> TypeScript, Turborepo
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-base font-bold">
+                    <a
+                      href="https://github.com/ciaracade/graded-aws-metric-api"
+                      className="text-black hover:text-gray-500 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Graded AWS Metric API
+                    </a>
+                  </h3>
+                  <span className="px-2 py-0.5 text-xs font-semibold bg-green-100 text-green-800 rounded">
+                    Finished
+                  </span> {/* For anything thats being "maintained", do a blue tag instead */}
+                </div>
+                <p className="text-sm text-gray-700">
+                  API that grades AWS VPC subnet utilization and provides
+                  configuration recommendations
+                </p>
+                <p className="text-sm text-gray-500 mt-1">
+                  <span className="font-semibold">Built with:</span> Python,
+                  Flask, SQLAlchemy, Boto3, LocalStack, Docker
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-lg font-bold mb-4">Recent Pull Requests</h2>
+            <div className="space-y-3">
+              {recentPRs.map((pr, index) => (
+                <div key={index}>
+                  <a
+                    href={pr.url}
+                    className="text-sm font-semibold text-black hover:text-gray-500 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {pr.title}
+                  </a>
+                  <p className="text-xs text-gray-500">
+                    {pr.repository} •{" "}
+                    <span
+                      className={
+                        pr.state === "Merged"
+                          ? "text-purple-600 font-semibold"
+                          : pr.state === "Open"
+                          ? "text-green-600 font-semibold"
+                          : "text-red-600 font-semibold"
+                      }
+                    >
+                      {pr.state}
+                    </span>
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-lg font-bold mb-4">Blog</h2>
             <p className="text-sm text-gray-500 italic">Coming soon...</p>
           </section>
         </div>
