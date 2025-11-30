@@ -1,8 +1,7 @@
 import { LinkPreview } from "@/components/ui/link-preview";
-import { getRecentPRs } from "@/lib/github";
+import { RecentPRs } from "@/components/RecentPRs";
 
-export default async function Home() {
-  const recentPRs = await getRecentPRs();
+export default function Home() {
   return (
     <div className="relative min-h-screen w-full">
       <div className="absolute inset-0 z-10 flex justify-center font-sans overflow-y-auto">
@@ -63,16 +62,22 @@ export default async function Home() {
           </div>
 
           <p className="text-sm mb-4">
-            Computer Science Senior at @ University of Michigan.
+            Computer Science Senior at @{" "}
+            <LinkPreview url="https://umich.edu/" className="text-black">
+              <span className="text-black font-bold">
+                University of Michigan
+              </span>
+              .
+            </LinkPreview>
           </p>
           <p className="text-sm mb-4">
-            Content Creator with 31k+ total following.
+            Content Creator with 31k+ total following across LinkedIn, Instagram, Tiktok, and X.
           </p>
           <p className="text-sm mb-4">
-            Currently building{" "}
+            Building{" "}
             <LinkPreview url="https://sourceship.dev" className="text-black">
               <span className="text-black font-bold">Sourceship.dev</span>
-            </LinkPreview>{" "}
+            </LinkPreview>
             , the{" "}
             <span className="font-bold">
               open-source internship alternative
@@ -89,6 +94,7 @@ export default async function Home() {
           <section className="mb-8">
             <h2 className="text-lg font-bold mb-4">Experience</h2>
             <div className="space-y-4">
+              {/* 
               <div>
                 <div className="flex justify-between items-baseline">
                   <div>
@@ -101,7 +107,7 @@ export default async function Home() {
                   </div>
                 </div>
               </div>
-              {/* -- Shhhhhh I'm manifesting....
+              */}
               <div>
                 <div className="flex justify-between items-baseline">
                   <div>
@@ -111,12 +117,11 @@ export default async function Home() {
                     <p className="text-sm italic">Mercury</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-sm">Incoming September 2025</p>
+                    <p className="text-sm"> January 2025 - May 2026</p>
                     <p className="text-sm italic">Remote</p>
                   </div>
                 </div>
               </div>
-              */}
               <div className="flex justify-between items-baseline">
                 <div>
                   <h3 className="text-base font-bold">
@@ -229,10 +234,12 @@ export default async function Home() {
                   </span>
                 </div>
                 <p className="text-sm text-gray-700">
-                  Open-source internship alternative connecting developers with real-world projects
+                  Open-source internship alternative connecting developers with
+                  real-world projects
                 </p>
                 <p className="text-sm text-gray-500 mt-1">
-                  <span className="font-semibold">Built with:</span> Next.js, React, TypeScript, Supabase, Tailwind CSS
+                  <span className="font-semibold">Built with:</span> Next.js,
+                  React, TypeScript, Supabase, Tailwind CSS
                 </p>
               </div>
               <div>
@@ -255,7 +262,8 @@ export default async function Home() {
                   AI-powered stream aggregation UI for Apache Kafka pipelines
                 </p>
                 <p className="text-sm text-gray-500 mt-1">
-                  <span className="font-semibold">Built with:</span> TypeScript, React
+                  <span className="font-semibold">Built with:</span> TypeScript,
+                  React
                 </p>
               </div>
               <div>
@@ -275,10 +283,12 @@ export default async function Home() {
                   </span>
                 </div>
                 <p className="text-sm text-gray-700">
-                  Model Context Protocol server using University of Michigan public APIs
+                  Model Context Protocol server using University of Michigan
+                  public APIs
                 </p>
                 <p className="text-sm text-gray-500 mt-1">
-                  <span className="font-semibold">Built with:</span> TypeScript, Turborepo
+                  <span className="font-semibold">Built with:</span> TypeScript,
+                  Turborepo
                 </p>
               </div>
               <div>
@@ -295,7 +305,8 @@ export default async function Home() {
                   </h3>
                   <span className="px-2 py-0.5 text-xs font-semibold bg-green-100 text-green-800 rounded">
                     Finished
-                  </span> {/* For anything thats being "maintained", do a blue tag instead */}
+                  </span>{" "}
+                  {/* For anything thats being "maintained", do a blue tag instead */}
                 </div>
                 <p className="text-sm text-gray-700">
                   API that grades AWS VPC subnet utilization and provides
@@ -311,34 +322,7 @@ export default async function Home() {
 
           <section className="mb-8">
             <h2 className="text-lg font-bold mb-4">Recent Pull Requests</h2>
-            <div className="space-y-3">
-              {recentPRs.map((pr, index) => (
-                <div key={index}>
-                  <a
-                    href={pr.url}
-                    className="text-sm font-semibold text-black hover:text-gray-500 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {pr.title}
-                  </a>
-                  <p className="text-xs text-gray-500">
-                    {pr.repository} •{" "}
-                    <span
-                      className={
-                        pr.state === "Merged"
-                          ? "text-purple-600 font-semibold"
-                          : pr.state === "Open"
-                          ? "text-green-600 font-semibold"
-                          : "text-red-600 font-semibold"
-                      }
-                    >
-                      {pr.state}
-                    </span>
-                  </p>
-                </div>
-              ))}
-            </div>
+            <RecentPRs />
           </section>
 
           <section className="mb-16">
