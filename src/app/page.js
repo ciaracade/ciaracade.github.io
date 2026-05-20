@@ -71,10 +71,21 @@ export default function Home() {
             </LinkPreview>
           </p>
           <p className="text-sm mb-4">
-            Content Creator with 31k+ total following across LinkedIn, Instagram, Tiktok, and X.
+            Content Creator with 31k+ total following across LinkedIn,
+            Instagram, Tiktok, and X.
           </p>
           <p className="text-sm mb-4">
             Building{" "}
+            <LinkPreview url="https://finulabs.com" className="text-black">
+              <span className="text-black font-bold">FinuLabs</span>
+            </LinkPreview>
+            , the{" "}
+            <span className="font-bold">
+            regulatory operating system for advanced reactor developers.
+            </span>
+          </p>
+          <p className="text-sm mb-4">
+            Built{" "}
             <LinkPreview url="https://sourceship.dev" className="text-black">
               <span className="text-black font-bold">Sourceship.dev</span>
             </LinkPreview>
@@ -108,6 +119,30 @@ export default function Home() {
                 </div>
               </div>
               */}
+              <div>
+                <div className="flex justify-between items-baseline">
+                  <div>
+                    <h3 className="text-base font-bold">Software Engineer</h3>
+                    <p className="text-sm italic">Bloomberg</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm">August 2026</p>
+                    <p className="text-sm italic">New York, New York</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex justify-between items-baseline">
+                  <div>
+                    <h3 className="text-base font-bold">Cofounder/CTO</h3>
+                    <p className="text-sm italic">FinuLabs</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm">April 2026 - Present</p>
+                    <p className="text-sm italic">Ann Arbor, Michigan</p>
+                  </div>
+                </div>
+              </div>
               <div>
                 <div className="flex justify-between items-baseline">
                   <div>
