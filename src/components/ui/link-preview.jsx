@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
 import Image from "next/image";
 import { encode } from "qss";
@@ -19,7 +19,6 @@ export const LinkPreview = ({
   width = 200,
   height = 125,
   quality = 50,
-  layout = "fixed",
   isStatic = false,
   imageSrc = ""
 }) => {
@@ -63,16 +62,15 @@ export const LinkPreview = ({
 
   return (<>
     {isMounted ? (
-      <div className="hidden">
+      <span className="hidden">
         <Image
           src={src}
           width={width}
           height={height}
           quality={quality}
-          layout={layout}
           priority={true}
           alt="hidden image" />
-      </div>
+      </span>
     ) : null}
     <HoverCardPrimitive.Root
       openDelay={50}
@@ -120,7 +118,6 @@ export const LinkPreview = ({
                   width={width}
                   height={height}
                   quality={quality}
-                  layout={layout}
                   priority={true}
                   className="rounded-lg"
                   alt="preview image" />

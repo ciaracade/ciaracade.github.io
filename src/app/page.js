@@ -61,7 +61,7 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="text-sm mb-4">
+          <div className="text-sm mb-4">
             Computer Science Senior at @{" "}
             <LinkPreview url="https://umich.edu/" className="text-black">
               <span className="text-black font-bold">
@@ -69,22 +69,22 @@ export default function Home() {
               </span>
               .
             </LinkPreview>
-          </p>
+          </div>
           <p className="text-sm mb-4">
             Content Creator with 31k+ total following across LinkedIn,
             Instagram, Tiktok, and X.
           </p>
-          <p className="text-sm mb-4">
+          <div className="text-sm mb-4">
             Building{" "}
             <LinkPreview url="https://finulabs.com" className="text-black">
               <span className="text-black font-bold">FinuLabs</span>
             </LinkPreview>
             , the{" "}
             <span className="font-bold">
-            regulatory operating system for advanced reactor developers.
+              regulatory operating system for advanced reactor developers.
             </span>
-          </p>
-          <p className="text-sm mb-4">
+          </div>
+          <div className="text-sm mb-4">
             Built{" "}
             <LinkPreview url="https://sourceship.dev" className="text-black">
               <span className="text-black font-bold">Sourceship.dev</span>
@@ -95,7 +95,7 @@ export default function Home() {
             </span>{" "}
             inspired by my prev project building community of{" "}
             <span className="font-bold">3,100+</span> users.
-          </p>
+          </div>
           <p className="text-sm mb-4">
             <span className="font-bold">Interests:</span> open source
             contributing, backend systems, databases, AI infra/tools, context
@@ -152,7 +152,7 @@ export default function Home() {
                     <p className="text-sm italic">Mercury</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-sm"> January 2025 - May 2026</p>
+                    <p className="text-sm">January 2025 - May 2026</p>
                     <p className="text-sm italic">Remote</p>
                   </div>
                 </div>

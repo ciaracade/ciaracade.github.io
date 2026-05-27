@@ -61,8 +61,8 @@ export function RecentPRs({ username = "ciaracade", limit = 5 }) {
 
   return (
     <div className="space-y-3">
-      {prs.map((pr, index) => (
-        <div key={index}>
+      {prs.map((pr) => (
+        <div key={pr.url}>
           <a
             href={pr.url}
             className="text-sm font-semibold text-black hover:text-gray-500 transition-colors"
