@@ -71,54 +71,27 @@ export default function Home() {
             </LinkPreview>
           </div>
           <p className="text-sm mb-4">
-            Content Creator with 31k+ total following across LinkedIn,
+            Content Creator with 34k+ total following across LinkedIn,
             Instagram, Tiktok, and X.
           </p>
           <div className="text-sm mb-4">
-            Building{" "}
-            <LinkPreview url="https://finulabs.com" className="text-black">
-              <span className="text-black font-bold">FinuLabs</span>
-            </LinkPreview>
-            , the{" "}
-            <span className="font-bold">
-              regulatory operating system for advanced reactor developers.
-            </span>
+            Building in stealth on AI x Energy.
           </div>
           <div className="text-sm mb-4">
-            Built{" "}
-            <LinkPreview url="https://sourceship.dev" className="text-black">
-              <span className="text-black font-bold">Sourceship.dev</span>
-            </LinkPreview>
-            , the{" "}
+            Built an{" "}
             <span className="font-bold">
               open-source internship alternative
-            </span>{" "}
-            inspired by my prev project building community of{" "}
+            </span>
+            , growing a community of{" "}
             <span className="font-bold">3,100+</span> users.
           </div>
           <p className="text-sm mb-4">
-            <span className="font-bold">Interests:</span> open source
-            contributing, backend systems, databases, AI infra/tools, context
-            engineering, MCPs etc.
+            <span className="font-bold">Current Interests:</span> open source
+            contributing, compilers, ML, Math, Physics, Finance.
           </p>
-
           <section className="mb-8">
             <h2 className="text-lg font-bold mb-4">Experience</h2>
             <div className="space-y-4">
-              {/* 
-              <div>
-                <div className="flex justify-between items-baseline">
-                  <div>
-                    <h3 className="text-base font-bold">Founder</h3>
-                    <p className="text-sm italic">SourceShip.dev</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-sm">August 2025 – Present</p>
-                    <p className="text-sm italic">Remote</p>
-                  </div>
-                </div>
-              </div>
-              */}
               <div>
                 <div className="flex justify-between items-baseline">
                   <div>
@@ -157,16 +130,18 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex justify-between items-baseline">
-                <div>
-                  <h3 className="text-base font-bold">
-                    Software Development Engineer Intern
-                  </h3>
-                  <p className="text-sm italic">Amazon</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-sm">May 2025 - August 2025</p>
-                  <p className="text-sm italic">Seattle, WA</p>
+              <div>
+                <div className="flex justify-between items-baseline">
+                  <div>
+                    <h3 className="text-base font-bold">
+                      Software Development Engineer Intern
+                    </h3>
+                    <p className="text-sm italic">Amazon</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm">May 2025 - August 2025</p>
+                    <p className="text-sm italic">Seattle, WA</p>
+                  </div>
                 </div>
               </div>
               <div>
