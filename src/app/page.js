@@ -1,5 +1,3 @@
-import { LinkPreview } from "@/components/ui/link-preview";
-import { RecentPRs } from "@/components/RecentPRs";
 
 export default function Home() {
   return (
@@ -8,14 +6,8 @@ export default function Home() {
         <div className="text-grey text-left max-w-2xl p-8 mb-12">
           <h1 className="text-2xl font-bold text-black">
             {" "}
-            <LinkPreview
-              url="https://www.linkedin.com/in/ciaracade"
-              className="text-black"
-            >
-              <span className="text-black">Ciara Cade</span>
-            </LinkPreview>
+            Ciara Cade
           </h1>
-
           <div className="flex items-center space-x-2 text-sm mb-4">
             <a
               href="mailto:cadeci@umich.edu"
@@ -60,34 +52,18 @@ export default function Home() {
               resume
             </a>
           </div>
-
           <div className="text-sm mb-4">
-            Computer Science Senior at @{" "}
-            <LinkPreview url="https://umich.edu/" className="text-black">
-              <span className="text-black font-bold">
-                University of Michigan
-              </span>
-              .
-            </LinkPreview>
+            Hello, my name is Ciara. I'm a Software Engineer at Bloomberg and incoming
+            Computer Science Graduate Student at @ Georgia Institute of Technology.
           </div>
           <p className="text-sm mb-4">
-            Content Creator with 34k+ total following across LinkedIn,
-            Instagram, Tiktok, and X.
+            
+            I'm currently rebuilding my mathematical foundation starting from Algebra and Pre-Calulus.
+            I'm also a Content Creator with 34k+ total following across LinkedIn, Instagram, Tiktok, and X.
+            In my free time, I like to read books about interesting people and learn chess and poker. 
           </p>
-          <div className="text-sm mb-4">
-            Building in stealth on AI x Energy.
-          </div>
-          <div className="text-sm mb-4">
-            Built an{" "}
-            <span className="font-bold">
-              open-source internship alternative
-            </span>
-            , growing a community of{" "}
-            <span className="font-bold">3,100+</span> users.
-          </div>
           <p className="text-sm mb-4">
-            <span className="font-bold">Current Interests:</span> open source
-            contributing, compilers, ML, Math, Physics, Finance.
+            <span className="font-bold">Current Interests:</span> Math, Chess, Poker, Machine Learning, (auto)biographies of really interesting people
           </p>
           <section className="mb-8">
             <h2 className="text-lg font-bold mb-4">Experience</h2>
@@ -99,20 +75,8 @@ export default function Home() {
                     <p className="text-sm italic">Bloomberg</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-sm">August 2026</p>
+                    <p className="text-sm">August 2026- Present</p>
                     <p className="text-sm italic">New York, New York</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between items-baseline">
-                  <div>
-                    <h3 className="text-base font-bold">Cofounder/CTO</h3>
-                    <p className="text-sm italic">FinuLabs</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-sm">April 2026 - Present</p>
-                    <p className="text-sm italic">Ann Arbor, Michigan</p>
                   </div>
                 </div>
               </div>
@@ -190,155 +154,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-lg font-bold mb-4">Awards</h2>
-            <div className="space-y-2 text-sm">
-              <div className="flex">
-                <span className="font-bold">
-                  1<sup>st</sup>
-                  <span className="ml-1">Place Team</span>
-                </span>
-                <span className="ml-1 text-black-300">
-                  - JP Morgan Chase Code for Good Hackathon
-                </span>
-              </div>
-              <div className="flex">
-                <span className="font-bold">
-                  1<sup>st</sup>
-                  <span className="ml-1">Place Team</span>
-                </span>
-                <span className="ml-1 text-black-300">
-                  - Capital One Banking for Good Hackathon
-                </span>
-              </div>
-              <div className="flex">
-                <span className="font-bold">
-                  Contributions to Tech Community
-                </span>
-                <span className="ml-1 text-black-300">
-                  - OpenAI Scholarship Recipient
-                </span>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-lg font-bold mb-4">Projects</h2>
-            <div className="space-y-4">
-              <div>
-                <div className="flex items-center gap-2">
-                  <h3 className="text-base font-bold">
-                    <a
-                      href="https://sourceship.dev"
-                      className="text-black hover:text-gray-500 transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      SourceShip.dev
-                    </a>
-                  </h3>
-                  <span className="px-2 py-0.5 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded">
-                    Building
-                  </span>
-                </div>
-                <p className="text-sm text-gray-700">
-                  Open-source internship alternative connecting developers with
-                  real-world projects
-                </p>
-                <p className="text-sm text-gray-500 mt-1">
-                  <span className="font-semibold">Built with:</span> Next.js,
-                  React, TypeScript, Supabase, Tailwind CSS
-                </p>
-              </div>
-              <div>
-                <div className="flex items-center gap-2">
-                  <h3 className="text-base font-bold">
-                    <a
-                      href="https://github.com/ciaracade/MorphosisAI"
-                      className="text-black hover:text-gray-500 transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      MorphosisAI
-                    </a>
-                  </h3>
-                  <span className="px-2 py-0.5 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded">
-                    Building
-                  </span>
-                </div>
-                <p className="text-sm text-gray-700">
-                  AI-powered stream aggregation UI for Apache Kafka pipelines
-                </p>
-                <p className="text-sm text-gray-500 mt-1">
-                  <span className="font-semibold">Built with:</span> TypeScript,
-                  React
-                </p>
-              </div>
-              <div>
-                <div className="flex items-center gap-2">
-                  <h3 className="text-base font-bold">
-                    <a
-                      href="https://github.com/ciaracade/umich-mcp"
-                      className="text-black hover:text-gray-500 transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      UMich MCP Server
-                    </a>
-                  </h3>
-                  <span className="px-2 py-0.5 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded">
-                    Building
-                  </span>
-                </div>
-                <p className="text-sm text-gray-700">
-                  Model Context Protocol server using University of Michigan
-                  public APIs
-                </p>
-                <p className="text-sm text-gray-500 mt-1">
-                  <span className="font-semibold">Built with:</span> TypeScript,
-                  Turborepo
-                </p>
-              </div>
-              <div>
-                <div className="flex items-center gap-2">
-                  <h3 className="text-base font-bold">
-                    <a
-                      href="https://github.com/ciaracade/graded-aws-metric-api"
-                      className="text-black hover:text-gray-500 transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Graded AWS Metric API
-                    </a>
-                  </h3>
-                  <span className="px-2 py-0.5 text-xs font-semibold bg-green-100 text-green-800 rounded">
-                    Finished
-                  </span>{" "}
-                  {/* For anything thats being "maintained", do a blue tag instead */}
-                </div>
-                <p className="text-sm text-gray-700">
-                  API that grades AWS VPC subnet utilization and provides
-                  configuration recommendations
-                </p>
-                <p className="text-sm text-gray-500 mt-1">
-                  <span className="font-semibold">Built with:</span> Python,
-                  Flask, SQLAlchemy, Boto3, LocalStack, Docker
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-lg font-bold mb-4">Recent Pull Requests</h2>
-            <RecentPRs />
-          </section>
-
-          <section className="mb-16">
-            <h2 className="text-lg font-bold mb-4">Blog</h2>
-            <p className="text-sm text-gray-500 italic">Coming soon...</p>
-          </section>
+          </section>{" "}
         </div>
       </div>
     </div>
